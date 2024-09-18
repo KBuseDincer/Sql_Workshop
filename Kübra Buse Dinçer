@@ -1,0 +1,76 @@
+--select categoryid, count(productname) AS 'Ürün Sayısı' from Products
+--GROUP BY categoryid;
+
+--select * from Products
+--order by unitprice DESC
+--LIMIT 5;
+
+--SELECT supplierid, AVG(unitprice) AS 'Ortalama Fiyat' from Products
+--GROUP by supplierid;
+
+--select productname, categoryid, AVG(unitprice) AS 'Ortalama Fiyat' from Products
+--where unitprice>100
+--GROUP by categoryid;
+
+--select productid, (unitprice*quantity) As 'Toplam Satış Değeri' from 'Order Details'
+--where 'Toplam Satış Değeri'>1000
+
+--select * from Orders
+--order by shippeddate DESC 
+--LIMIT 10
+
+--SELECT productid, AVG(unitprice) from Products
+
+
+--select productid, unitsinstock from Products
+--where unitprice>50
+
+--select orderdate from Orders
+--order by orderdate ASC
+--LIMIT 1
+
+--SELECT employeeid, (2024 - hiredate) AS 'Çalışma Yılı' from Employees
+
+--select orderid, round(sum(unitprice),2) AS 'Ortalama Fiyat' from 'Order Details'
+--GROUP by orderid
+
+--SELECT productid, count(unitsinstock) from Products
+--GROUP by productid
+
+
+--select max(unitprice) from Products
+--UNION
+--select min(unitprice) from Products
+
+--SELECT STRFTIME('%Y', OrderDate) AS OrderYear, COUNT(*) AS OrderCount
+--FROM Orders
+--GROUP BY OrderYear
+
+--select concat(firstname,' ', lastname) as 'Full Name' from Employees
+
+
+--select city, length(city) from Customers
+
+--SELECT productid, round(unitprice,2) AS 'Price' from Products
+
+--select count(orderid) AS 'Toplam Sayı' from Orders
+
+--select categoryid, productid, AVG(unitprice) AS 'Ortalama' from Products
+--GROUP by categoryid
+
+--select (count(*) * 100.0/ (select COUNT(*) from Orders)) AS 'Percentage' from Orders
+--where shippeddate is NULL
+
+--select productid, (max(unitprice)*1.10) AS 'Most Experience' from Products
+
+--select SUBSTRING(productname,1,3) from Products
+
+--SELECT strftime('%Y', OrderDate) AS OrderYear, strftime('%m', OrderDate) AS OrderMonth, COUNT(*) AS OrderCount
+--FROM Orders
+--GROUP BY OrderYear, OrderMonth
+
+--select orderid, round(sum(unitprice*quantity),2) from 'Order Details'
+--GROUP by orderid
+
+--select productid, sum(unitprice) as 'Toplam Fiyat' from Products
+--where unitsinstock=0
