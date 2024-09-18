@@ -13,7 +13,7 @@
 --GROUP by categoryid;
 
 --select productid, (unitprice*quantity) As 'Toplam Satış Değeri' from 'Order Details'
---where 'Toplam Satış Değeri'>1000
+--where (unitprice*quantity)>1000
 
 --select * from Orders
 --order by shippeddate DESC 
