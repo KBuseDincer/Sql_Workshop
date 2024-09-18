@@ -15,23 +15,23 @@
 --select productid, (unitprice*quantity) As 'Toplam Satış Değeri' from 'Order Details'
 --where (unitprice*quantity)>1000
 
---select * from Orders
+--select orderid from Orders
 --order by shippeddate DESC 
 --LIMIT 10
 
---SELECT productid, AVG(unitprice) from Products
+--SELECT AVG(unitprice) from Products
 
 
---select productid, unitsinstock from Products
+--select sum(unitsinstock) from Products
 --where unitprice>50
 
---select orderdate from Orders
+--select orderid, orderdate from Orders
 --order by orderdate ASC
 --LIMIT 1
 
 --SELECT employeeid, (2024 - hiredate) AS 'Çalışma Yılı' from Employees
 
---select orderid, round(sum(unitprice),2) AS 'Ortalama Fiyat' from 'Order Details'
+--select orderid, round(sum(unitprice),2) AS 'Toplam Fiyat' from 'Order Details'
 --GROUP by orderid
 
 --SELECT productid, count(unitsinstock) from Products
